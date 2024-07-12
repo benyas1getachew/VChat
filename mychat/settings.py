@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mychat.wsgi.application'
+WSGI_APPLICATION = 'Vchat.wsgi.application'
 
 
 # Database
