@@ -7,7 +7,7 @@ from .models import RoomMember
 import json
 from django.views.decorators.csrf import csrf_exempt
 
-
+import os
 
 # Create your views here.
 
@@ -19,8 +19,8 @@ def room(request):
 
 
 def getToken(request):
-    appId = "YOUR APP ID"
-    appCertificate = "YOUR APP CERTIFICATE"
+    appId = os.getenv('APP_ID')
+    appCertificate = os.getenv('APP_CERTIFICATE')
     channelName = request.GET.get('channel')
     uid = random.randint(1, 230)
     expirationTimeInSeconds = 3600
