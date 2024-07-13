@@ -1,1 +1,1 @@
-web: gunicorn mychat.wsgi --log-file -
+web: gunicorn mychat.wsgi --bind 0.0.0.0:8000
