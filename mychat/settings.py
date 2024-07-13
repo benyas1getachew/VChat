@@ -120,7 +120,7 @@ STATIC_URL = '/static/'  # Ensure this starts with a leading slash
 
 STATICFILES_DIRS = [ os.path.join(BASE_DIR,'static') ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # WhiteNoise settings
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
